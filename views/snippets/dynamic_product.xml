@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- template for our snippet -->
+    <template id="dynamic_product" name="Product Dynamic">
+        <section class="dynamic-product">
+            <div class="container mt16">
+                <!-- element to store list of cities using JS -->
+                <div class="row justify-content-center px-4" id="product-row"/>
+            </div>
+        </section>
+    </template>
+
+    <!-- To be used in JS for snippet options -->
+<!--    <template id="explore_cities_options" inherit_id="website.snippet_options">-->
+<!--        <xpath expr="//div[@data-js='Box']" position="before">-->
+<!--            <div data-js="ExploreCitiesOptions" data-selector=".explore-cities" data-drop-in=".o_mega_menu nav">-->
+<!--            </div>-->
+<!--        </xpath>-->
+<!--    </template>-->
+</odoo>
