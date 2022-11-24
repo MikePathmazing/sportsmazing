@@ -32,54 +32,47 @@ const DynamicProduct = publicWidget.Widget.extend({
 //            })
 //        }
           if (productRow) {
-            var html = `<div class="col">
-                          <div style='height:500px;border-radius:20px' class='shadow-none p-3 mb-5 bg-light'>
-                            <div class="card border-0" style="width: 800px, height: 800px">
-                            <div class="card-footer border-0">
-                              <img src="/website_custom/static/src/img/i_am_team_cambodia_t_shirt.svg"
-                                   class="img img-fluid mx-auto pt16 pb32"
-                                   alt=""/>
-
-                              <h4 style='font-weight:700;'>I AM TEAM CAMBODIA T-SHIRT</h4>
-                              <a href="/shop" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">SHOP NOW</a>
+            var html = `<div class="col-md-6">
+                          <div class="card border-0 h-100 w-100" style="border-radius: 20px;">
+                            <img src="sportsmazing_theme/static/src/img/i_am_team_cambodia_t_shirt.svg" class="img img-fluid mx-auto py-5"/>
+                            <div class="card-body mt-auto">
+                              <h5 class="card-title mx-3 mt-auto">I am team Cambodia T Shirt</h5>
+                              <a href="/shop" class="btn btn-primary m-3 mt-auto">SHOP NOW</a>
                             </div>
-                          </div>
                           </div>
                         </div>
-                        <div class="col">
-                          <div class='row' style='height:240px;'>
-                          <div class='col'>
-                            <div class="card border-0">
-                              <div class="card-footer border-0">
-                                <img src="/website_custom/static/src/img/bottle.svg" class="img img-fluid mx-auto pt16 pb16"
-                                     alt=""/>
-                                <a href="/shop" class="btn btn-primary mb-2">SHOP NOW</a>
-                              </div>
-                            </div>
-                            </div>
-                            <div class='col'>
-                            <div class="card border-0">
-                              <div class="card-footer border-0">
-                                <img src="/website_custom/static/src/img/face_mask.png" class="img img-fluid mx-auto pt16 pb16"
-                                     alt=""/>
-                                <a href="/shop" class="btn btn-primary mb-2">SHOP NOW</a>
-                              </div>
-                            </div>
-                            </div>
+                        <div class="col-md-6">
+                          <div class="row g-2">
+                                <div class="col-6">
+                                      <div class="card border-0 h-100 w-100" style="border-radius: 20px;">
+                                        <img src="sportsmazing_theme/static/src/img/bottle.svg" class="img img-fluid mx-auto pt-3 w-50 h-30" style='height:200px'/>
+                                        <div class="card-body mx-auto">
+                                          <h5 class="card-title mx-auto">Bottle</h5>
+                                          <a href="/shop" class="btn btn-outline-primary">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-6">
+                                      <div class="card border-0 h-100 w-100" style="border-radius: 20px;">
+                                        <img src="sportsmazing_theme/static/src/img/face_mask.svg" class="img img-fluid mx-auto pt-3 w-50 h-50"/>
+                                        <div class="card-body mx-auto">
+                                          <h5 class="card-title mx-auto">Mask</h5>
+                                          <a href="/shop" class="btn btn-outline-primary">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                      <div class="card border-0 h-100 w-100" style="border-radius: 20px;">
+                                        <img src="sportsmazing_theme/static/src/img/hats.svg" class="img img-fluid mx-auto pt-5 w-20"/>
+                                        <div class="card-body mx-auto">
+                                          <h5 class="card-title mx-auto">Hats</h5>
+                                          <a href="/shop" class="btn btn-outline-primary">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                </div>
                           </div>
-                          <div class='row' style='height:240px;'>
-                          <div class='col'>
-                          <div class="card border-0">
-                            <div class="card-footer border-0">
-                              <img src="/website_custom/static/src/img/hats.svg" class="img img-fluid mx-auto pt16 pb16"
-                                   alt=""/>
-                              <a href="/shop" class="btn btn-primary mb-2">SHOP NOW</a>
-                            </div>
-                          </div>
-                          </div>
-                          </div>
-
-                        </div>`
+                        </div>
+            `
             productRow.innerHTML = html
           }
 

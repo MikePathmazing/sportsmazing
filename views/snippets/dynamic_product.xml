@@ -5,7 +5,7 @@
         <section class="dynamic-product">
             <div class="container mt16">
                 <!-- element to store list of cities using JS -->
-                <div class="row justify-content-center px-4" id="product-row"/>
+                <div class="row gy-2 gx-2" id="product-row"/>
             </div>
         </section>
     </template>
